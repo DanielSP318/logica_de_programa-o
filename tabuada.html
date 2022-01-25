@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+<title>Tabuada</title>
+<p>Logo abaixo você encontra a tabula do 7 usando um repetidor e uma variável multiplicador = 1. Dentro do for se coloca var multiplicador = 1; multiplicador <=10; multiplicador++  fazendo com que o repetidor multiplica o 7 de 1 até 10 e declarando as demais coisas que se faz necessário para ter um for funcional :D</p>
+<script type="text/javascript">
+	function pulaLinha(){
+		document.write("<br>");
+		document.write("<br>");
+	}
+	function mostrar(frase){
+		document.write(frase);
+		pulaLinha();
+	}
+
+	for(var multiplicador = 1; multiplicador <=10; multiplicador++){
+		mostrar(7 * multiplicador);
+	}
+
+	/*Exemplo usando o while: 
+	var multiplicador = 1;
+
+   	while(multiplicador <= 10){
+	mostrar(7 * multiplicador);
+	multiplicador = multiplicador + 1; (isso faz com que o a multiplicação não fique repetida 7 * 1 10 vezes)
+   	}
+   	Isso e mais uma forma de usar um repetidor, utilize a forma que fique mais fácil e agradavél para você!
+   	*/
+	mostrar("Fim da tabuada de 7!");
+</script>
+<p>Modifique "mostrar(7 * multiplicador);" retire o 7 e coloque outros números para ter outras multiplicações!</p>

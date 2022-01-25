@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<title>Números em ordem decrescente</title>
+<p>Aqui você encontra um contador de 20 até 0, criamos uma váriavel chamada contador = 20. 
+    Isso determina aonde o contador vai começar, e um while (repetidor) dizendo contador >= 0, isso determina até onde o contador vai!</p>
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var contador = 20;
+
+    while( contador >= 0) {
+
+      mostra(contador);
+      contador = contador - 1;
+    }
+
+    mostra("FIM");
+</script>

@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<title>Média da família</title>
+<script type="text/javascript">
+	function pulaLinha(){
+		document.write("<br>");
+		document.write("<br>");
+	}
+	function mostrar(frase){
+		document.write(frase);
+		pulaLinha();
+	}
+    var nome = prompt("Olá, bem vinde digite seu nome")
+	var totalFamiliares = parseInt(prompt(nome + " digite a quantidade de familiares?"));
+	var numero = 1;
+
+	var totalIdades = 0;
+	while(numero <= totalFamiliares){
+		var idade = parseInt(prompt("Informe a idade do familiar!"));
+	totalIdades = totalIdades + idade;
+	numero++;
+}
+	var mediaDasIdades = totalIdades/totalFamiliares;
+	mostrar("A média das idades dos familiares é " + mediaDasIdades);
+	mostrar("FIM da aplicação!");
+</script>

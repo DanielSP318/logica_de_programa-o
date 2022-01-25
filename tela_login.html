@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+<title>Tela de login</title>
+<p>Aqui temos um exemplo de login! </p>
+<p>Onde o usúario só pode ter 3 tentativas de entrar na conta, caso ele erre mais que 3 vezes não poderá tentar novamente! Foi criado uma variável para o login e outra para a senha. 
+Também foram criadas 2 variáveis que serve para dizer até quantas tentativas o usuário pode fazer e outra que diz a tentativa atual do usuário. 
+Logo após isso e criado um while (repetição) que vai fazer as repetições caso o usuário erre, 
+dando a oportunidade do usuário tentar outras vezes. 
+Logo após temos uma condição na qual vai associar a quantidade de vezes que o usuário pode ter junto a verificação do login e da senha!</p>
+<script>
+
+    var loginCadastrado = "Dacota";
+    var senhaCadastrada = "Dacota1234";
+
+    var maximoTentativas = 3;
+    var tentativaAtual = 1;
+
+    while(tentativaAtual <= maximoTentativas) {
+
+        var loginInformado = prompt("Informe seu login");
+        var senhaInformada = prompt("Informe sua senha");
+
+        if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {
+
+            alert("Bem-vindo ao sistema, " + loginInformado);
+
+            tentativaAtual = maximoTentativas; // acertou, então faço o gasto de todas as tentativas para sair do loop. Lá embaixo vai incrementar + 1! 
+
+        } else {
+
+            if (tentativaAtual == 3) {
+                alert("Número permitido de tentativas ultrapassado!");
+            } else {
+                alert("Login inválido. Tente novamente");
+            }
+        }
+
+       // vai para a próxima tentativa
+        tentativaAtual = tentativaAtual +1  
+    }
+
+</script>
